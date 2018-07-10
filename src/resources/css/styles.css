@@ -1,0 +1,61 @@
+
+@font-face {
+	src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+	src: url(../fonts/Karla-Regular.ttf);
+}
+
+* {
+	-fx-primary-color: #CE0819;
+	-fx-darken-primary-color: #890510;
+	-fx-secondary-color: #56185B;
+	-fx-text-fill: #212121;
+}
+
+.root {
+	-fx-font-family: Karla;
+	-fx-background-color: white;
+	-fx-font-size: 1.3em;
+}
+
+.main-title {
+	-fx-font-family: Merriweather;
+	-fx-font-size: 2em;
+	-fx-text-fill: -fx-primary-color;
+}
+
+.jfx-text-field, .jfx-password-field {
+	-fx-prompt-text-fill: -fx-text-fill;
+}
+
+.jfx-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+	-fx-background-radius: 25px;
+}
+
+.table-view {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header {
+	-fx-background-color: -fx-darken-primary-color;
+}
+
+.table-row-cell {
+	-fx-background-color: -fx-primary-color;
+}
+
+.table-row-cell:odd {
+	-fx-background-color: -fx-darken-primary-color;
+}
+
+.table-column .label, .table-cell {
+	-fx-text-fill: white;
+}
+
+.table-row-cell:selected {
+	-fx-background-color: #21A5D1;
+}

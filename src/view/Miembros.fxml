@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="@../resources/css/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiembrosController">
+   <children>
+      <HBox>
+         <children>
+            <VBox spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label prefHeight="25.0" text="Nombre:" textAlignment="RIGHT" />
+                        <JFXTextField fx:id="txtNombre" focusColor="#ce0819" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Dirección:" textAlignment="RIGHT" />
+                        <JFXTextField fx:id="txtDireccion" focusColor="#ce0819" prefHeight="25.0" prefWidth="160.0" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Fecha de nacimiento:" textAlignment="RIGHT" wrapText="true" />
+                        <JFXTextField fx:id="txtNacimiento" focusColor="#ce0819" prefHeight="25.0" prefWidth="160.0" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Fecha de conversión:" textAlignment="RIGHT" wrapText="true" />
+                        <JFXTextField fx:id="txtConversion" focusColor="#ce0819" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Fecha de bautizo:" textAlignment="RIGHT" wrapText="true" />
+                        <JFXTextField fx:id="txtBautizo" focusColor="#ce0819" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Fecha de pacto:" textAlignment="RIGHT" wrapText="true" />
+                        <JFXTextField fx:id="txtPacto" focusColor="#ce0819" prefHeight="25.0" prefWidth="160.0" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Área de servicio:" textAlignment="RIGHT" wrapText="true" />
+                        <JFXTextField fx:id="txtServicio" focusColor="#ce0819" prefHeight="25.0" prefWidth="160.0" unFocusColor="#212121" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <JFXButton onAction="#agregarMiembro" prefHeight="25.0" prefWidth="160.0" text="Añadir" />
+                        <JFXButton layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="160.0" text="Borrar" />
+                        <JFXButton layoutX="10.0" layoutY="50.0" prefHeight="25.0" prefWidth="160.0" text="Modificar" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <TableView fx:id="tblViewMiembros" prefWidth="925.0">
+              <columns>
+                <TableColumn fx:id="tblColumnNo" editable="false" prefWidth="43.0">
+                     <graphic>
+                        <Label text="No." />
+                     </graphic>
+                  </TableColumn>
+                <TableColumn fx:id="tblColumnNombre" editable="false" prefWidth="218.0">
+                     <graphic>
+                        <Label prefWidth="112.0" text="Nombre" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnDireccion" editable="false" prefWidth="214.0">
+                     <graphic>
+                        <Label fx:id="label1" alignment="CENTER" prefHeight="44.0" prefWidth="102.0" text="Dirección" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnNacimiento" editable="false" prefWidth="90.0">
+                     <graphic>
+                        <Label alignment="CENTER" prefHeight="44.0" prefWidth="113.0" text="Fecha de nacimiento" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnConversion" editable="false" prefWidth="90.0">
+                     <graphic>
+                        <Label fx:id="label11" alignment="CENTER" prefHeight="44.0" prefWidth="102.0" text="Fecha de conversión" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnBautizo" editable="false" prefWidth="90.0">
+                     <graphic>
+                        <Label fx:id="label111" alignment="CENTER" prefHeight="44.0" prefWidth="102.0" text="Fecha de bautizo" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnPacto" editable="false" prefWidth="88.0">
+                     <graphic>
+                        <Label fx:id="label1111" alignment="CENTER" prefHeight="44.0" prefWidth="102.0" text="Fecha de pacto" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="tblColumnServicio" editable="false" prefWidth="92.0">
+                     <graphic>
+                        <Label fx:id="label11111" alignment="CENTER" prefHeight="44.0" prefWidth="102.0" text="Área de servicio" textAlignment="CENTER" wrapText="true" />
+                     </graphic>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</VBox>
